@@ -55,8 +55,27 @@ class Array
     a = [1, 2, 3]
 #   puts  a.my_any? { |num| num > 1 } # => true
 #     puts a.my_any? { |num| num == 4 } # => false
-puts a.my_all? { |num| num > 1 } # => false
-puts a.my_all? { |num| num < 4 } # => true
+# puts a.my_all? { |num| num > 1 } # => false
+# puts a.my_all? { |num| num < 4 } # => true
+
+    def my_flatten
+        results = []        
+        self.my_each do |ele|
+            if !ele.is_a?(Array)
+                results += [ele] 
+            else
+                results += ele.my_flatten
+            end
+        end 
+        results
+    end
+
+# p [1, 2, 3, [4, [5, 6]], [[[7]], 8]].my_flatten # => [1, 2, 3, 4, 5, 6, 7, 8]
+
+
+
+
+
 end
    
 
