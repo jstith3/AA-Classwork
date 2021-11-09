@@ -1,16 +1,9 @@
-require "card"
-
 class Board
     attr_reader :size
     def initialize
         @grid= Array.new(4) {Array.new('_')}
         @size = 16 
-        @cards = []
     end
-
-  
-
-
 
     def[](position)
         row, col = position
@@ -23,7 +16,7 @@ class Board
         @grid[row][col] = val
     end
 
-    def empty?(position)
+    def empty(position)
         if self[position] == '_'
             return true
         end
@@ -36,14 +29,7 @@ class Board
     end
 
     def populate
-        row = @grid.sample
-        col = row.sample 
-        rowindex = @grid.index(row)
-        colidnex = row.index(col)
-        position = [rowindex,colindex]
-        if empty?(position)
-            self[position] = Card.new.value
-
+        
 
         
 
