@@ -13,29 +13,53 @@ class Array
     def my_select(&prc)
         results = []
         
-        # self.my_each(
+        self.my_each do |ele|
+           results << ele  if prc.call(ele) 
+        end  
         # results << self if self.my_each(prc) == true
 
         results
     end
 
+#     a = [1, 2, 3]
+# print a.my_select { |num| num > 1 } # => [2, 3]
+# print a.my_select { |num| num == 4 } # => []
 
+    def my_reject(&prc)
+        results = []
+        
+        self.my_each do |ele|
+           results << ele  if !prc.call(ele) 
+        end  
+        
+
+        results
+    end
+#     a = [1, 2, 3]
+# print a.my_reject { |num| num > 1 } # => [1]
+#  print a.my_reject { |num| num == 4 } # => [1, 2, 3]
+
+    def my_any?(&prc)
+        self.my_each do |ele|
+            return true if prc.call(ele) 
+        end
+        false
+    end
+
+    def my_all?(&prc)
+        self.my_each do |ele|
+            return false if !prc.call(ele) 
+        end
+        true
+    end
+    a = [1, 2, 3]
+#   puts  a.my_any? { |num| num > 1 } # => true
+#     puts a.my_any? { |num| num == 4 } # => false
+puts a.my_all? { |num| num > 1 } # => false
+puts a.my_all? { |num| num < 4 } # => true
 end
+   
 
-
-            # return_value = [1, 2, 3].my_each do |num|
-            #   puts num
-            # end.my_each do |num|
-            #   puts num
-            # end
-            # # => 1
-            #     #  2
-            #     #  3
-            #     #  1
-            #     #  2
-            #     #  3
-
-            # p return_value  # => [1, 2, 3]
-            # return_value
+            
 
     
