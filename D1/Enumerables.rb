@@ -72,6 +72,15 @@ class Array
 
 # p [1, 2, 3, [4, [5, 6]], [[[7]], 8]].my_flatten # => [1, 2, 3, 4, 5, 6, 7, 8]
 
+    def my_zip(*args)
+        results=Array.new(self.length) { Array.new(args.length + 1,nil)}
+        @grid = args.unshift(self)
+
+        (0...@grid.length).each do |i|
+            (0...@g)
+
+
+    end
 
 
 
