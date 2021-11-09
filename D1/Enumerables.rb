@@ -73,17 +73,30 @@ class Array
 # p [1, 2, 3, [4, [5, 6]], [[[7]], 8]].my_flatten # => [1, 2, 3, 4, 5, 6, 7, 8]
 
     def my_zip(*args)
-        results=Array.new(self.length) { Array.new(args.length + 1,nil)}
-        @grid = args.unshift(self)
-
-        (0...@grid.length).each do |i|
-            (0...@g)
-
-
+        results=Array.new(self.length) { Array.new{args.length +1, :X}}
+p results
+        grid = [self]
+        grid += args
+# p grid
+        # (0...grid.length).each do |i|
+        #     (0..args.length).each do |j|
+        #         if grid[j][i]
+        #             results[i][j] = grid[j][i]
+        #         end
+        #     end
+        # end
+        # results
     end
 
+a = [ 4, 5, 6 ]
+b = [ 7, 8, 9 ]
+[1, 2, 3].my_zip(a, b) # => [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+a.my_zip([1,2], [8])   # => [[4, 1, 8], [5, 2, nil], [6, nil, nil]]
+[1, 2].my_zip(a, b)    # => [[1, 4, 7], [2, 5, 8]]
 
-
+c = [10, 11, 12]
+d = [13, 14, 15]
+[1, 2].my_zip(a, b, c, d)    # => [[1, 4, 7, 10, 13], [2, 5, 8, 11, 14]]
 
 end
    
