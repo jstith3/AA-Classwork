@@ -49,7 +49,7 @@ class Board
         @grid
     end
 
-    
+    def 
 
     
 
