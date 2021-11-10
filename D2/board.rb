@@ -1,9 +1,15 @@
 class Board
     attr_reader :size
     def initialize
-        @grid= Array.new(4) {Array.new('_')}
+        @grid= Array.new(4) {Array.new(4,'_')}
         @size = 16 
+        @cards = [ "A", "B", "C", "D", "E", "F", "G", "H", "A", "B", "C", "D", "E", "F", "G", "H"   ]
     end
+
+    
+
+
+
 
     def[](position)
         row, col = position
@@ -16,7 +22,7 @@ class Board
         @grid[row][col] = val
     end
 
-    def empty(position)
+    def empty?(position)
         if self[position] == '_'
             return true
         end
@@ -29,12 +35,23 @@ class Board
     end
 
     def populate
-        
-
-        
-
-
+        while board_filled? == false 
+            row = @grid.sample
+            col = row.sample 
+            rowindex = @grid.index(row)
+            colindex = row.index(col)
+            position = [rowindex,colindex]
+    
+            if empty?(position)
+                self[position] = @cards.pop
+            end
+        end
+        @grid
     end
+
+    
+
+    
 
 
 end
