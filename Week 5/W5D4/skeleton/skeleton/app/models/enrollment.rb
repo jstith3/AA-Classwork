@@ -7,12 +7,7 @@
 #  updated_at :datetime         not null
 #  course_id  :integer
 #  student_id :integer
-#
-# create_table "enrollments", force: :cascade do |t|
-#     t.integer "course_id"
-#     t.integer "student_id"
-#     t.datetime "created_at", null: false
-#     t.datetime "updated_at", null: false
+
 
 class Enrollment < ApplicationRecord
     belongs_to :course,
