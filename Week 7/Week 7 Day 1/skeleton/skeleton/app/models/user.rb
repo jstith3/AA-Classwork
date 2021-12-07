@@ -10,7 +10,7 @@
 #  updated_at      :datetime         not null
 #
 class User < ApplicationRecord
-    after_initialize :reset_session_token
+    after_initialize :reset_session_token!
     validates :user_name, :session_token, presence: true, uniqueness: true 
     
     def reset_session_token!
