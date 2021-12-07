@@ -1,11 +1,11 @@
-<h1> create a new user </h1>
+<h1> Log In </h1>
 
-<form action="<%= users_url %>" method="POST"> 
+<form action="<%= sessions_url %>" method="POST"> 
     <label for="user_name">Username:</label>
     <input id='user_name'
         type="text"
         name="user[user_name]"
-        value="<%= @user.user_name %>"
+        value="<%= @user ? @user.user_name : "" %>"
     >
 
     <label for="password">Password:</label>
@@ -15,5 +15,5 @@
         value=""
     >
 
-    <input type="submit" value="Create User">
+    <input type="submit" value="Log In">
 </form>
