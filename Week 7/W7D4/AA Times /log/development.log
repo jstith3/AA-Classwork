@@ -396,3 +396,124 @@ Started GET "/assets/application.self-cc84567432da4ed5ba4d0a5cf0275c23bd2cffe0c5
 Started GET "/assets/application.self-cc84567432da4ed5ba4d0a5cf0275c23bd2cffe0c5252cd022d9c436ccd5815c.css?body=1&livereload=1639089716571" for ::1 at 2021-12-09 14:41:56 -0800
 Started GET "/assets/application.self-cc84567432da4ed5ba4d0a5cf0275c23bd2cffe0c5252cd022d9c436ccd5815c.css?body=1&livereload=1639089721775" for ::1 at 2021-12-09 14:42:01 -0800
 Started GET "/assets/application.self-cc84567432da4ed5ba4d0a5cf0275c23bd2cffe0c5252cd022d9c436ccd5815c.css?body=1&livereload=1639089721777" for ::1 at 2021-12-09 14:42:01 -0800
+Started GET "/" for ::1 at 2021-12-09 17:54:02 -0500
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/justinstith/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.2ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (0.2ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 604ms (Views: 600.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-12-09 17:54:03 -0500
+Started GET "/assets/application.self-9f101d0d36d48eb4b83b9d32fd2ea9351d7b8224a42100bc7032019c878907d2.css?body=1" for ::1 at 2021-12-09 17:54:03 -0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-12-09 17:54:03 -0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-12-09 17:54:03 -0500
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-12-09 17:54:03 -0500
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-12-09 17:54:03 -0500
+Started GET "/" for ::1 at 2021-12-09 18:02:16 -0500
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (2.0ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (0.6ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (59.1ms)
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "* Clearfix */": expected identifier, was ".group:after":
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3844310180572333414_70282853009960'
+
+Started POST "/__better_errors/5f63d96f929d5aa9/variables" for ::1 at 2021-12-09 18:02:16 -0500
+Started GET "/" for ::1 at 2021-12-09 18:02:24 -0500
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.3ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (1.1ms)
+  Rendered shared/_search_modal.html.erb (29.1ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (163.6ms)
+Completed 500 Internal Server Error in 291ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "* Clearfix */": expected identifier, was ".group:after":
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3844310180572333414_70282856127520'
+
+Started POST "/__better_errors/a7f3213257957b6b/variables" for ::1 at 2021-12-09 18:02:25 -0500
+Started GET "/" for ::1 at 2021-12-09 18:03:22 -0500
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "* Clearfix */": expected identifier, was ".group:after":
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3844310180572333414_70282840336740'
+
+Started POST "/__better_errors/c266addb001255b9/variables" for ::1 at 2021-12-09 18:03:22 -0500
+Started GET "/" for ::1 at 2021-12-09 18:04:22 -0500
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.3ms)
+  Rendered shared/_masthead.html.erb (0.2ms)
+  Rendered shared/_sections_nav.html.erb (0.2ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (1.0ms)
+  Rendered static_pages/index.html.erb within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "* Clearfix */": expected identifier, was ".group:after":
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3844310180572333414_70282855372620'
+
+Started POST "/__better_errors/52bb07099b8d591c/variables" for ::1 at 2021-12-09 18:04:23 -0500
+Started GET "/" for ::1 at 2021-12-09 18:06:31 -0500
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.2ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.2ms)
+  Rendered shared/_main_content.html.erb (0.9ms)
+  Rendered static_pages/index.html.erb within layouts/application (43.9ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "* Clearfix */": expected identifier, was ".group:after":
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3844310180572333414_70282840237720'
+
+Started POST "/__better_errors/f5c4169145f0f31e/variables" for ::1 at 2021-12-09 18:06:31 -0500
+Started GET "/" for ::1 at 2021-12-09 18:07:26 -0500
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.3ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (0.2ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+
+Sass::SyntaxError - Invalid CSS after "* Clearfix */": expected identifier, was ".group:after":
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3844310180572333414_70282854744720'
+
+Started POST "/__better_errors/7e1fba921619a13a/variables" for ::1 at 2021-12-09 18:07:26 -0500
